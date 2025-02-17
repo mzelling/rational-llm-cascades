@@ -7,8 +7,8 @@ import json
 import numpy as np
 from datasets import load_dataset
 
-from hcma import Model, AnthropicClient, FireworksClient, OpenAIClient
-from hcma import Chain, ModelIntrinsicLogProb, AskModelConfidence, TwoSidedAsymptoticLog, NullTransformation, LogisticRegressionCalibrator
+from niagara import Model, AnthropicClient, FireworksClient, OpenAIClient
+from niagara import Chain, ModelIntrinsicLogProb, AskModelConfidence, TwoSidedAsymptoticLog, NullTransformation, LogisticRegressionCalibrator
 
 ### Access the data set
 

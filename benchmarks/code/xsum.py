@@ -26,7 +26,7 @@ data_test = [data['test'][int(i)] for i in test_idx]
 #     pickle.dump(data_test, file)
 
 
-from hcma import Model, AnthropicClient, FireworksClient, OpenAIClient
+from niagara import Model, AnthropicClient, FireworksClient, OpenAIClient
 import json
 
 xsum_zeroshot_prompt = """Summarize the given source document. Write a concise summary that is coherent, consistent, fluent, and relevant, as judged by the following criteria:

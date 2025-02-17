@@ -2,8 +2,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from hcma import Model, AnthropicClient, FireworksClient, OpenAIClient
-from hcma import Chain, AskModelConfidence, TwoSidedAsymptoticLog, NullTransformation, LogisticRegressionCalibrator
+from niagara import Model, AnthropicClient, FireworksClient, OpenAIClient
+from niagara import Chain, AskModelConfidence, TwoSidedAsymptoticLog, NullTransformation, LogisticRegressionCalibrator
 from tqdm import tqdm
 from datasets import load_dataset
 import numpy as np

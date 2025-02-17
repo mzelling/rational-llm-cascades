@@ -5,7 +5,7 @@ load_dotenv()
 from datasets import load_dataset
 import pickle
 import numpy as np
-from hcma import Model, AnthropicClient, FireworksClient, OpenAIClient, \
+from niagara import Model, AnthropicClient, FireworksClient, OpenAIClient, \
     Chain, ModelIntrinsicLogProb, AskModelConfidence, TwoSidedAsymptoticLog, \
         NullTransformation, LogisticRegressionCalibrator
 from tqdm import tqdm

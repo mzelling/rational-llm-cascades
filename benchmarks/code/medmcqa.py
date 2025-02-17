@@ -3,11 +3,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from hcma import Model, AnthropicClient, FireworksClient, OpenAIClient
+from niagara import Model, AnthropicClient, FireworksClient, OpenAIClient
 import json
 from datasets import load_dataset
 import pickle
-from hcma import Chain, ModelIntrinsicLogProb, AskModelConfidence, TwoSidedAsymptoticLog, NullTransformation, LogisticRegressionCalibrator
+from niagara import Chain, ModelIntrinsicLogProb, AskModelConfidence, TwoSidedAsymptoticLog, NullTransformation, LogisticRegressionCalibrator
 import numpy as np
 
 
