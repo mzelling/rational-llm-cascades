@@ -24,9 +24,9 @@ test_idx = np.random.choice(len(data['test']), 1000, replace=False)
 data_train = [data['train'][int(i)] for i in train_idx]
 data_test = [data['test'][int(i)] for i in test_idx]
 
-# with open(f"./benchmark_data/{NAME}/{NAME}_train.pkl", "wb") as file:
+# with open(f"./benchmarks/data/{NAME}/{NAME}_train.pkl", "wb") as file:
 #     pickle.dump(data_train, file)
-# with open(f"./benchmark_data/{NAME}/{NAME}_test.pkl", "wb") as file:
+# with open(f"./benchmarks/data/{NAME}/{NAME}_test.pkl", "wb") as file:
 #     pickle.dump(data_test, file)
 
 
@@ -136,7 +136,7 @@ if __name__ == '__main__':
         system_prompt=triviaqa_system_prompt,
         make_example_fun=make_triviaqa_zeroshot_example,
         evaluate_answer_fun=evaluate_triviaqa_answer,
-        filename=f"./benchmark_data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_train.pkl",
+        filename=f"./benchmarks/data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_train.pkl",
         chunk_size=5,
     )
     print("Running test evaluation...")
@@ -146,7 +146,7 @@ if __name__ == '__main__':
         system_prompt=triviaqa_system_prompt,
         make_example_fun=make_triviaqa_zeroshot_example,
         evaluate_answer_fun=evaluate_triviaqa_answer,
-        filename=f"./benchmark_data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_test.pkl",
+        filename=f"./benchmarks/data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_test.pkl",
         chunk_size=5,
     )
 

@@ -174,7 +174,7 @@ if __name__ == '__main__':
         system_prompt=gsm8k_system_prompt,
         make_example_fun=make_gsm8k_zeroshot_example,
         evaluate_answer_fun=evaluate_gsm8k_answer,
-        filename=f"./benchmark_data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_train.pkl",
+        filename=f"./benchmarks/data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_train.pkl",
         chunk_size=5
     )
     print("Running on testing data...")
@@ -184,6 +184,6 @@ if __name__ == '__main__':
         system_prompt=gsm8k_system_prompt,
         make_example_fun=make_gsm8k_zeroshot_example,
         evaluate_answer_fun=evaluate_gsm8k_answer,
-        filename=f"./benchmark_data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_test.pkl",
+        filename=f"./benchmarks/data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_test.pkl",
         chunk_size=5
     )

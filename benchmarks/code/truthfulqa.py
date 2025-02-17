@@ -127,7 +127,7 @@ if __name__ == '__main__':
         system_prompt=truthful_qa_system_prompt,
         make_example_fun=make_truthful_qa_zeroshot_example,
         evaluate_answer_fun=evaluate_truthful_qa_answer,
-        filename=f"./benchmark_data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_train.pkl",
+        filename=f"./benchmarks/data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_train.pkl",
         chunk_size=5
     )
     print("Running test evaluation...")
@@ -137,6 +137,6 @@ if __name__ == '__main__':
         system_prompt=truthful_qa_system_prompt,
         make_example_fun=make_truthful_qa_zeroshot_example,
         evaluate_answer_fun=evaluate_truthful_qa_answer,
-        filename=f"./benchmark_data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_test.pkl",
+        filename=f"./benchmarks/data/{NAME}/chain_results/{NAME}_full_{chain_name}_results_test.pkl",
         chunk_size=5
     )
