@@ -3,5 +3,6 @@ numpy
 scipy
 statsmodels
 pandas
+datasets
 git+https://github.com/tommyod/paretoset.git
 git+https://github.com/mzelling/niagara.git
